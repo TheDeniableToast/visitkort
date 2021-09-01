@@ -1,0 +1,86 @@
+h1, h2, p {
+ font-family: 'Lato', sans-serif;
+ font-weight: 400;
+}
+
+img {
+    min-height: 250px;
+}
+
+body {
+    background-image: url("/assets/Group\ 20.svg");
+    background-size: cover;
+}
+
+
+.card {
+  display: flex;
+  margin-top: 180px;
+  background-color: #e5e5e5;
+  border-radius: 25px;
+  box-shadow: 0px 1px 3px black;
+}
+
+.card2 {
+    background-color: #bcbcbc;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 3px black;
+}
+
+.card3 {
+    background-color: #9f9f9f;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 3px black;
+}
+
+.card4 {
+    background-color: #828080;
+    margin-left: 30%;
+    margin-right: 30%;
+    border-radius: 25px;
+    padding-bottom: 10px;
+    box-shadow: 0px 1px 3px black;
+}
+
+
+.profpic {
+    margin-right: 40px;
+    margin-left: 20px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+
+.title {
+    margin-bottom: 0px;
+    margin-top: 40px;
+}
+.title h1 {
+    margin-bottom: 0;
+    margin-top: 0;
+    font-size: 2.5rem;
+}
+
+.title h2 {
+    margin-top: 5px;
+    font-size: 1.7rem;
+}
+
+
+.contacts {
+    margin-bottom: 15px;
+}
+
+.contacts p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.address p {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+
