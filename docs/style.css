@@ -25,33 +25,65 @@ body {
     display: flex;
     background-color: #e5e5e5;
     border-radius: 25px;
-    box-shadow: 0px 1px 3px black;
+    border: solid black 2px;
     text-align: left;
+    transition: transform 0.3s;
+    z-index: 4;
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-20px) scale(1.03);
+    box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.212);
+    border: solid black 1px;
 }
 
 .card2 {
     background-color: #bcbcbc;
     border-radius: 25px;
     padding-bottom: 10px;
-    box-shadow: 0px 1px 3px black;
+    border: solid black 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 3;
+    transform: translateY(15px);
 }
 
 .card3 {
     background-color: #9f9f9f;
     border-radius: 25px;
     padding-bottom: 10px;
-    box-shadow: 0px 1px 3px black;
+    border: solid black 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    transform: translateY(30px);
 }
 
 .card4 {
     background-color: #828080;
-    margin-left: 25vw;
-    margin-right: 25vw;
-    width: 50vw;
     margin-bottom: 0;
     border-radius: 25px;
     padding-bottom: 10px;
-    box-shadow: 0px 1px 3px black;
+    border: solid black 2px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    transform: translateY(45px);
+}
+
+.cardborder {
+    width: 50vw;
+    position: relative;
 }
 
 
@@ -101,7 +133,6 @@ h2 {
         display: flex;
         background-color: #e5e5e5;
         border-radius: 25px;
-        box-shadow: 0px 1px 3px black;
         text-align: left;
     }
     
@@ -186,7 +217,6 @@ h2 {
         flex-direction: column;
         background-color: #e5e5e5;
         border-radius: 25px;
-        box-shadow: 0px 1px 3px black;
         text-align: center;
     }
 
@@ -198,7 +228,7 @@ h2 {
         margin-bottom: 0px;
         border-radius: 25px;
         padding-bottom: 10px;
-        box-shadow: 0px 1px 3px black;
+        
     }
 
     .profpic {
@@ -236,7 +266,7 @@ h2 {
     }
 
     .card {
-        margin-top: 10vh;
+        margin-top: 0vh;
     }
 
 }
@@ -251,7 +281,7 @@ h2 {
         margin-bottom: 0px;
         border-radius: 25px;
         padding-bottom: 10px;
-        box-shadow: 0px 1px 3px black;
+        
     }
 
     .profpic {
@@ -284,7 +314,6 @@ h2 {
         margin-bottom: 0px;
         border-radius: 25px;
         padding-bottom: 10px;
-        box-shadow: 0px 1px 3px black;
     }
 
 }
