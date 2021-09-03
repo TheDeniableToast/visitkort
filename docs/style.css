@@ -7,7 +7,7 @@ p {
 }
 
 body {
-    background-image: url("assets/Group 20.svg");
+    background-image: url("assets/bg.svg");
     background-size: cover;
     height: 100vh;
     display: flex;
