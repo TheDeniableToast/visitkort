@@ -12,7 +12,6 @@ body {
     height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 
 .card {
@@ -29,6 +28,14 @@ body {
     position: absolute;
 }
 
+.container {
+    width: 100%;
+    padding: 0 40px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
 .card1 {
     display: flex;
     background-color: #e5e5e5;
@@ -37,8 +44,8 @@ body {
     text-align: left;
     transition: transform 0.3s;
     z-index: 4;
+    padding: 50px;
     position: relative;
-    margin-bottom: 45px;
 }
 
 .card1:hover {
@@ -65,31 +72,19 @@ body {
 }
 
 .cardborder {
-    min-width: clamp(48vw, 100vw, 3vw);
     position: relative;
+    margin-bottom: 80px;
 }
 
 .cardinfo {
-    margin-top: 8px;
-    margin-left: 20px;
+    margin-left: 2vh;
 }
-
-.profpic {
-    margin-right: 50px;
-    margin-left: 35px;
-    margin-top: 50px;
-    margin-bottom: 40px;
-}
-
 
 .title {
-    margin-bottom: 50px;
-    margin-top: 35px;
+    margin-bottom: 2vh;
 }
 
 h1 {
-    margin-bottom: 0;
-    margin-top: 0;
     font-size: clamp(1.8rem, 3.5rem, 3.5vw);
 }
 
@@ -99,57 +94,39 @@ h2 {
 }
 
 p {
-    font-size: clamp(1rem, 1.6rem, 1.8vw);
+    font-size: clamp(1.05rem, 1.6rem, 1.8vw);
 }
 
 img {
     width: 15vw;
-    min-width: 200px;
+    min-width: 180px;
     display: block;
 }
 
 .contacts {
-    margin-bottom: 45px;
-}
-
-.address {
-    margin-bottom: 30px;
+    margin-bottom: 2vh;
 }
 
 
-@media only screen and (max-width: 900px) {
-    img {
-        min-width: 170px;
-    }
-
+@media only screen and (max-width: 600px) {
     .card1 {
-        margin-top: 0vh;
         flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
     }
 
-    .profpic {
-        margin-top: 40px;
-    }
-
-}
-
-@media only screen and (max-width: 400px) {
-
-    .profpic {
-        margin-top: 30px;
+    .cardinfo {
+        margin: 0;
     }
     
     img {
         min-width: 120px;
     }
-    
+
     .title {
         margin-bottom: 15px;
         margin-top: 10px;
-    }
-
-    .contacts {
-        margin-bottom: 15px;
     }
 
 }
