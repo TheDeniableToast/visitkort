@@ -20,11 +20,30 @@ body {
     left: 0;
     right: 0;
     border-radius: 25px;
-    padding: 50px;
+    padding: 30px;
     display: flex;
     background-color: #e5e5e5;
     text-align: left;
-    transition: transform 0.3s;
+}
+
+.front {
+    justify-content: center;
+    align-items: center;
+}
+
+.back {
+    border-radius: 25px;
+    padding: 30px;
+    display: flex;
+    background-color: #e5e5e5;
+    text-align: left;
+    transform: rotateY(180deg);
+}
+
+.front, .back {
+    position: relative;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .container {
@@ -35,14 +54,21 @@ body {
     justify-content: center;
 }
 
-.card:hover {
-    transform: translateY(-20px) scale(1.03);
+.cardborder:hover {
+    transform: translateY(-20px) scale(1.03) rotateY(180deg);
     box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.212);
 }
 
 .cardborder {
     position: relative;
-    margin-bottom: 40px;
+    perspective: 1000px;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.border {
+    display: flex;
+    flex-direction: column;
 }
 
 .cardinfo {
