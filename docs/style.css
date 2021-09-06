@@ -20,12 +20,11 @@ body {
     left: 0;
     right: 0;
     border-radius: 25px;
-    padding-bottom: 10px;
-    border: solid black 2px;
-}
-
-.back {
-    position: absolute;
+    padding: 50px;
+    display: flex;
+    background-color: #e5e5e5;
+    text-align: left;
+    transition: transform 0.3s;
 }
 
 .container {
@@ -36,44 +35,14 @@ body {
     justify-content: center;
 }
 
-.card1 {
-    display: flex;
-    background-color: #e5e5e5;
-    border-radius: 25px;
-    border: solid black 2px;
-    text-align: left;
-    transition: transform 0.3s;
-    z-index: 4;
-    padding: 50px;
-    position: relative;
-}
-
-.card1:hover {
+.card:hover {
     transform: translateY(-20px) scale(1.03);
     box-shadow: 0px 1px 30px rgba(0, 0, 0, 0.212);
 }
 
-.card2 {
-    background-color: #bcbcbc;
-    z-index: 3;
-    transform: translateY(15px);
-}
-
-.card3 {
-    background-color: #9f9f9f;
-    z-index: 2;
-    transform: translateY(30px);
-}
-
-.card4 {
-    background-color: #828080;
-    z-index: 1;
-    transform: translateY(45px);
-}
-
 .cardborder {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 40px;
 }
 
 .cardinfo {
@@ -97,6 +66,25 @@ p {
     font-size: clamp(1.05rem, 1.6rem, 1.8vw);
 }
 
+.tips {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.tipweb {
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 25px;
+    display: inline;
+    padding: 10px;
+}
+
+.tipphone {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 25px;
+}
+
 img {
     width: 15vw;
     min-width: 180px;
@@ -109,11 +97,25 @@ img {
 
 
 @media only screen and (max-width: 600px) {
-    .card1 {
+    .card {
         flex-direction: column;
         text-align: center;
         align-items: center;
         justify-content: center;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    .tips {
+        margin-top: 25px;
+    }
+
+    .tipphone {
+        display: inline;
+    }
+
+    .tipweb {
+        display: none;
     }
 
     .cardinfo {
@@ -121,7 +123,7 @@ img {
     }
     
     img {
-        min-width: 120px;
+        min-width: 140px;
     }
 
     .title {
