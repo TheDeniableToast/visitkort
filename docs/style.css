@@ -16,7 +16,7 @@ body {
 
 .card {
     border-radius: 25px;
-    padding: 30px;
+    padding: 20px;
     display: flex;
     background-color: #e5e5e5;
     justify-content: center;
@@ -29,18 +29,15 @@ body {
     justify-content: center;
     margin-right: 10vw;
     margin-left: 10vw;
-    margin-top: 1vw;
+    margin-top: 1vh;
     min-width: 18vw;
-    min-height: 15vw;
-    z-index: 1;
-    align-items: center;
+    min-height: 15vh;
     position: relative;
 }
 
 .back {
     border-radius: 25px;
     padding: 0px;
-    z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -68,7 +65,6 @@ body {
 }
 
 .cardborder {
-    position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
 }
@@ -76,12 +72,11 @@ body {
 .border {
     display: flex;
     flex-direction: column;
-    position: relative;
     perspective: 1000px;
 }
 
 .cardinfo {
-    margin-left: 2vh;
+    margin-left: 2vw;
 }
 
 .title {
@@ -89,16 +84,16 @@ body {
 }
 
 h1 {
-    font-size: clamp(1.8rem, 3.5rem, 3.5vw);
+    font-size: clamp(1.8rem, 3.5rem, 3.2vw);
 }
 
 h2 {
     margin-top: 5px;
-    font-size: clamp(1.2rem, 2.2rem, 2.6vw);
+    font-size: clamp(1.2rem, 2.2rem, 2.4vw);
 }
 
 p {
-    font-size: clamp(1.05rem, 1.6rem, 1.8vw);
+    font-size: clamp(1.05rem, 1.6rem, 1.1vw);
 }
 
 .tips {
@@ -131,14 +126,19 @@ p {
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
+    
     .card {
         flex-direction: column;
+    }
+
+    .front {
+        min-height: 40vh;
+    }
+    
+    .back {
+        flex-direction: column;
         text-align: center;
-        align-items: center;
-        justify-content: center;
-        padding-left: 30px;
-        padding-right: 30px;
     }
 
     .tips {
@@ -156,9 +156,9 @@ p {
     .cardinfo {
         margin: 0;
     }
-    
-    img {
-        min-width: 140px;
+
+    .profpic img {
+        min-width: 20vw;
     }
 
     .title {
