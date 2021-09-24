@@ -48,7 +48,7 @@ body {
     transform: rotateY(180deg);
 }
 
-.front, .back {
+.back, .front {
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
 }
@@ -80,6 +80,7 @@ body {
 
 .cardinfo {
     margin-left: 2vw;
+    z-index: 0;
 }
 
 .title {
@@ -149,6 +150,7 @@ p {
         margin-top: 25px;
     }
 
+
     .tipphone {
         display: inline;
     }
@@ -159,6 +161,10 @@ p {
 
     .cardinfo {
         margin: 0;
+    }
+
+    .front img {
+        max-width: 33vw;
     }
 
     .profpic img {
